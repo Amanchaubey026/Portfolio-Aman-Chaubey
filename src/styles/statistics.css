@@ -1,0 +1,12 @@
+.git-content{
+    margin-top: 80px;
+    text-align: center;
+
+    h1{
+        font-size: 80px;
+    }
+    
+    img{
+        height: 350px;
+    }
+}
