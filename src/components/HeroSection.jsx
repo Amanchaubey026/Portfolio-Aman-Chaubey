@@ -4,6 +4,14 @@ import Typed from 'typed.js';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const HeroSection = () => {
+  function handleDownload(){
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/uc?export=download&id=1N97C5vtPK_TmyLSWWOSD11osNvSiB-BQ';
+    link.download = 'AmanChaubey_8881503310.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   useEffect(() => {
     let typed = null;
     if (typed === null) {
@@ -30,7 +38,7 @@ const HeroSection = () => {
         <div  className="hero-connect">
         <AnchorLink href="#contact" >Connect with me.</AnchorLink>
         </div>
-        <div className="hero-resume">
+        <div onClick={handleDownload} className="hero-resume">
           My Resume
         </div>
       </div>
