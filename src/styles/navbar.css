@@ -1,25 +1,27 @@
 .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
     position: sticky;
+    gap: 40px;
     top: 0;
     background-color: #212121;
     z-index: 2;
-    height: 120px;
+    max-height:100px;
   }
   
   .logo {
-    height: 90px;
+    max-height: 60px;
+    padding: 5px 40px;
   }
   
   .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 60px;
-    font-size: 20px;
+    gap: 50px;
+    font-size:15px;
   }
   
   .nav-menu a {
@@ -50,10 +52,11 @@
   }
   
   .nav-connect {
-    padding: 20px 40px;
+    margin-right: 25px;
+    padding: 15px 25px;
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
-    font-size: 20px;
+    font-size: 12px;
     cursor: pointer;
     transition: 0.5s;
     a{
@@ -74,11 +77,15 @@
     display: none;
     font-size: 50px;
   }
+  @media (max-width:992px){
+    .nav-connect{
+      display: none;
+    }
+  }
  @media (max-width:768px) {
     .navbar{
       margin: 20px 50px;
       position: static;
-      
     }
     .nav-connect{
       display: none;

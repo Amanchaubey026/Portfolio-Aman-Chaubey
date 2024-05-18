@@ -27,14 +27,14 @@ const Navbar = () => {
           <IoMdCloseCircleOutline />
         </div>
         <li className={activePage === "home" ? "active" : ""}>
-          <AnchorLink href="#home" onClick={() => setActivePage("home")}>
+          <AnchorLink href="#home" offset={40} onClick={() => setActivePage("home")}>
             <p>Home</p>
           </AnchorLink>
         </li>
         <li className={activePage === "about" ? "active" : ""}>
           <AnchorLink
             href="#about"
-            offset={50}
+            offset={60}
             onClick={() => setActivePage("about")}
           >
             <p>About</p>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <li className={activePage === "skills" ? "active" : ""}>
           <AnchorLink
             href="#skills"
-            offset={50}
+            offset={60}
             onClick={() => setActivePage("skills")}
           >
             <p>Skills</p>
@@ -52,7 +52,7 @@ const Navbar = () => {
         <li className={activePage === "projects" ? "active" : ""}>
           <AnchorLink
             href="#projects"
-            offset={50}
+            offset={60}
             onClick={() => setActivePage("projects")}
           >
             <p>Projects</p>
@@ -61,7 +61,7 @@ const Navbar = () => {
         <li className={activePage === "statistics" ? "active" : ""}>
           <AnchorLink
             href="#statistics"
-            offset={50}
+            offset={60}
             onClick={() => setActivePage("statistics")}
           >
             <p>Statistics</p>
@@ -70,7 +70,7 @@ const Navbar = () => {
         <li className={activePage === "contact" ? "active" : ""}>
           <AnchorLink
             href="#contact"
-            offset={50}
+            offset={60}
             onClick={() => setActivePage("contact")}
           >
             <p>Contact</p>

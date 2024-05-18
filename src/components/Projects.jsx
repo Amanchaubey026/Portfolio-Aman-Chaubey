@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <div id="projects" className="project-all">
       <div className="project-title">
-        <h1>My Projects</h1>
+        <h1 id="heading">My Projects</h1>
       </div>
       <div className="project-container grid-container">
         <Card about={bbAbout} name={bb} url={basketBlend} img={img1}/>

@@ -8,6 +8,7 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className="footer">
+      <hr />
       <div className="footer-top">
         <div className="footer-top-left">
           <p>
@@ -25,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr />
+      {/* <hr /> */}
       <div className="footer-bottom">
         <p className="footer-bottom-left">
           {" "}

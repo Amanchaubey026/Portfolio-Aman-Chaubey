@@ -1,17 +1,18 @@
 .hero {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
 
   img {
     margin-top: 20px;
-    height: 350px;
+    height: 200px;
   }
   h1 {
     text-align: center;
     width: 70%;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 600;
     span {
       background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
@@ -23,14 +24,14 @@
   p {
     width: 50%;
     text-align: center;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 40px;
   }
   .hero-action {
     display: flex;
     align-items: center;
     gap: 25px;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 50px;
     .hero-connect {
@@ -62,16 +63,29 @@
 
 @media (max-width:768px) {
   #home{
-    width: 100%;
 
+    margin-left: 450px;
   }
   .hero img{
     margin-bottom: 120px;
-    height: 360px;
+    height: 560px;
   }
   .hero h1{
-    margin-top: 50px;
-    width: 90%;
+    margin-top: 10px;
+    width: 600px;
     font-size: 50px;
   }
+  .hero p{
+    width: 600px;
+  }
+  .hero-connect{
+    width: 140px;
+    padding: 15px 25px;
+  }
+  .hero-resume{
+        width: 100px;
+        padding: 15px 25px;
+        border-radius: 50px;
+        border: 2px solid #fff;
+    }
 }

@@ -11,7 +11,7 @@
                 height: 50px;
             }
             p{
-                font-size: 20px;
+                font-size: 15px;
                 max-width: 400px;
             }
         }
@@ -22,7 +22,7 @@
             .footer-email-input{
                 display: flex;
                 gap: 30px;
-                padding: 20px 30px;
+                padding: 10px 20px;
                 border-radius: 50px;
                 background: #32323B;
                 padding-right: 80px;
@@ -53,6 +53,80 @@
             align-items: center;
             a{
                 font-size:xx-large;
+            }
+        }
+    }
+}
+
+                        
+@media (max-width:768px) {
+    .footer{
+        margin: 100px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .footer-top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .footer-top-left{
+                img{
+                    height: 50px;
+                }
+                p{
+                    font-size: 20px;
+                    min-width: 600px;
+                    margin-left: 350px;
+                }
+            }
+            .footer-top-right{
+                display: none;
+                align-items: center;
+                gap: 35px;
+                .footer-email-input{
+                    margin-left: 350px;
+                    margin-top: 40px;
+                    display: flex;
+                    gap: 30px;
+                    padding: 20px 30px;
+                    justify-content: center;
+                    border-radius: 50px;
+                    background: #32323B;
+                    padding-right: 80px;
+                    input{
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        color: #a0a0a0;
+                        font-size: 18px;
+                    }
+                }
+                .footer-email-input:hover{
+                    border: 2px solid white;
+                }
+                .footer-suscribe:hover{
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                }
+            }
+        }
+        .footer-bottom{
+            display: flex;
+            min-width: 900px;
+            justify-content: space-between;
+            .footer-bottom-left{
+                display: none;
+            }
+            .footer-bottom-right{
+                display: flex;
+                gap: 30px;
+                margin-bottom: 50px;
+                margin-left: 450px;
+                align-items: center;
+                a{
+                    font-size:xx-large;
+                }
             }
         }
     }
